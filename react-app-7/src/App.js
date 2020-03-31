@@ -13,15 +13,15 @@ class App extends React.Component {
   render() {
     let wordDisplay
     if (this.state.isLoggedIn === true) {
-      wordDisplay="in"
+      wordDisplay="IN"
     } else {
-      wordDisplay="out"
+      wordDisplay="OUT"
     }
     return (
       <div>
         <h1>{this.state.name}</h1>
         <h3><font color="#3ac1ef">▍{this.state.age} years old</font></h3>
-        <p>You are currently logged {wordDisplay}</p>
+        <p>You are currently logged <span>{wordDisplay}</span></p>
       </div>
     )
   }
